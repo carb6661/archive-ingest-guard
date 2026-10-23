@@ -1,0 +1,116 @@
+{
+  "clean_content_sha256": "846798ef80a5f182f59cf2a601ea7033fb08aa78cdcb5bb605e08dcfe8f10eba",
+  "dataset": "original-small-synthetic-v1",
+  "note": "No unsafe baseline extractor runs; before/after changes the bundle, not the trust policy.",
+  "scenario_count": 12,
+  "scenarios": [
+    {
+      "destination_exists": false,
+      "issue_code": "path_policy",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "before-parent-path",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": true,
+      "issue_code": null,
+      "observed_bytes": 132,
+      "outcome": "published",
+      "phase": "published",
+      "scenario": "after-clean-bundle",
+      "verified_files": 2
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "namespace_collision",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "case-alias",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "namespace_collision",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "prefix-alias",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "member_type",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "symlink-metadata",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "extension_policy",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "unsupported-extension",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "file_limit",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "file-budget",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "total_limit",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "total-budget",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "entry_limit",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "entry-budget",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "ratio_limit",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "metadata",
+      "scenario": "ratio-budget",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": false,
+      "issue_code": "invalid_member",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "stream",
+      "scenario": "corrupt-stream",
+      "verified_files": 0
+    },
+    {
+      "destination_exists": true,
+      "issue_code": "destination_exists",
+      "observed_bytes": null,
+      "outcome": "rejected",
+      "phase": "destination",
+      "scenario": "existing-container",
+      "verified_files": 0
+    }
+  ]
+}
