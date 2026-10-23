@@ -67,6 +67,6 @@ check 返回 verified，extract 返回 published；两份输出分别 84、48 �
 
 ## CI
 
-工作流定义 Windows/Linux × Python3.11/3.12/3.13 六组环境，执行全部 unittest 与12情境demo。每组跳过情况以实际日志为准；不能把本机符号链接跳过项写成全平台已验证。
+[首次发布 CI](https://github.com/carb6661/archive-ingest-guard/actions/runs/39974907963) 对应代码提交 `eea141bfc001d0afc0ff57cf49c82cfb2ea9b559`，Windows/Linux × Python3.11/3.12/3.13 **六组全部成功**。逐组日志均为 `Ran 106 tests` / `OK`，没有跳过；12情境demo也均完成。
 
-本节发布时先描述已配置矩阵；具体首次运行链接与完成状态在实际核验后记录，不预填成功结果。
+CI runner 允许创建目录符号链接，真实父目录 symlink 拒绝测试在六组都实际执行通过。不能反过来把本机因权限跳过的项目说成本机通过，也不能把 CI 的 symlink 用例当作全部 Windows reparse 类型或恶意竞态均已覆盖。
